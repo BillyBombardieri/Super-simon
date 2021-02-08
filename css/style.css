@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hidden {
+    display: none ;
+  }
+  
+  .invisble {
+    visibility: hidden;
+  }
+  
+  header {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .tile-container {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px;
+    grid-gap: 5px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  
+  .unclickable {
+    pointer-events: none;
+  }
+  
+  .tile-red {
+    background-color: #b12600;
+    transition: 0.15s;
+  }
+  
+  .tile-red:hover,
+  .tile-red:focus {
+    background-color: #b12600;
+  }
+  
+  .tile-red:active,
+  .tile-red.activated {
+    background-color: #ff5c36;
+  }
+  
+  .tile-green {
+    background-color: #4e7200;
+    transition: 0.15s;
+  }
+  
+  .tile-green:hover,
+  .tile-green:focus {
+    background-color: #4e7200;
+  }
+  
+  .tile-green:active,
+  .tile-green.activated {
+    background-color: #a0ea00;
+  }
+  
+  .tile-yellow {
+    background-color: #ffc400;
+    transition: 0.15s;
+  }
+  
+  .tile-yellow:hover,
+  .tile-yellow:focus {
+    background-color: #ffc400;
+  }
+  
+  .tile-yellow:active,
+  .tile-yellow.activated {
+    background-color: #ffe23d;
+  }
+  
+  .tile-blue {
+    background-color: #006594;
+    transition: 0.15s;
+  }
+  
+  .tile-blue:hover,
+  .tile-blue:focus {
+    background-color: #006594;
+  }
+  
+  .tile-blue:active,
+  .tile-blue.activated {
+    background-color: #2bbcff;
+  }
+  
+  .info-section {
+    text-align: center;
+  }
+  
+  .start-button {
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
